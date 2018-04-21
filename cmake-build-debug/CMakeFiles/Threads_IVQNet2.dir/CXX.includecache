@@ -1,0 +1,192 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Agent.cpp
+Agent.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Agent.hpp
+iostream
+-
+Helper.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Helper.hpp
+math.h
+-
+
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Agent.hpp
+stdio.h
+-
+vector
+-
+map
+-
+Data.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Data.hpp
+State.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/State.hpp
+Helper.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Helper.hpp
+
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Contingence.cpp
+Contingence.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Contingence.hpp
+iostream
+-
+
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Contingence.hpp
+vector
+-
+
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Data.cpp
+Data.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Data.hpp
+iostream
+-
+Helper.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Helper.hpp
+fstream
+-
+string
+-
+sstream
+-
+
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Data.hpp
+vector
+-
+Param.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Param.hpp
+
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/ErrorManager.cpp
+ErrorManager.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/ErrorManager.hpp
+iostream
+-
+assert.h
+-
+
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/ErrorManager.hpp
+stdio.h
+-
+vector
+-
+Param.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Param.hpp
+Contingence.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Contingence.hpp
+fstream
+-
+
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/FileManager.cpp
+FileManager.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/FileManager.hpp
+
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/FileManager.hpp
+stdio.h
+-
+fstream
+-
+vector
+-
+
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Helper.cpp
+Helper.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Helper.hpp
+iostream
+-
+
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Helper.hpp
+stdio.h
+-
+math.h
+-
+random
+-
+fstream
+-
+vector
+-
+
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/NeuralNetwork.cpp
+NeuralNetwork.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/NeuralNetwork.hpp
+iostream
+-
+math.h
+-
+Helper.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Helper.hpp
+
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/NeuralNetwork.hpp
+Data.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Data.hpp
+Agent.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Agent.hpp
+Helper.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Helper.hpp
+
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Param.cpp
+Param.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Param.hpp
+
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Param.hpp
+stdio.h
+-
+vector
+-
+Helper.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Helper.hpp
+
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/State.cpp
+State.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/State.hpp
+Helper.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Helper.hpp
+iostream
+-
+
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/State.hpp
+stdio.h
+-
+vector
+-
+math.h
+-
+Helper.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Helper.hpp
+Param.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Param.hpp
+
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/main.cpp
+iostream
+-
+map
+-
+math.h
+-
+fstream
+-
+string
+-
+iomanip
+-
+Agent.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Agent.hpp
+Helper.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Helper.hpp
+Data.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Data.hpp
+NeuralNetwork.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/NeuralNetwork.hpp
+FileManager.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/FileManager.hpp
+Contingence.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/Contingence.hpp
+State.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/State.hpp
+ErrorManager.hpp
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2/ErrorManager.hpp
+

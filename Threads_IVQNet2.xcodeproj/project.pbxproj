@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		650D8A2E2019900C0060C665 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650D8A2D2019900C0060C665 /* main.cpp */; };
+		650D8A44201990290060C665 /* Param.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650D8A34201990290060C665 /* Param.cpp */; };
+		650D8A45201990290060C665 /* NeuralNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650D8A36201990290060C665 /* NeuralNetwork.cpp */; };
+		650D8A46201990290060C665 /* Agent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650D8A38201990290060C665 /* Agent.cpp */; };
+		650D8A47201990290060C665 /* State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650D8A3A201990290060C665 /* State.cpp */; };
+		650D8A48201990290060C665 /* FileManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650D8A3C201990290060C665 /* FileManager.cpp */; };
+		650D8A49201990290060C665 /* Helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650D8A3E201990290060C665 /* Helper.cpp */; };
+		650D8A4A201990290060C665 /* Data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650D8A40201990290060C665 /* Data.cpp */; };
+		650D8A4B201990290060C665 /* Contingence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650D8A42201990290060C665 /* Contingence.cpp */; };
+		650D8A4E201996A40060C665 /* ErrorManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650D8A4C201996A40060C665 /* ErrorManager.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		650D8A282019900C0060C665 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		650D8A2A2019900C0060C665 /* Threads_IVQNet2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Threads_IVQNet2; sourceTree = BUILT_PRODUCTS_DIR; };
+		650D8A2D2019900C0060C665 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		650D8A34201990290060C665 /* Param.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Param.cpp; sourceTree = "<group>"; };
+		650D8A35201990290060C665 /* Param.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Param.hpp; sourceTree = "<group>"; };
+		650D8A36201990290060C665 /* NeuralNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NeuralNetwork.cpp; sourceTree = "<group>"; };
+		650D8A37201990290060C665 /* NeuralNetwork.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NeuralNetwork.hpp; sourceTree = "<group>"; };
+		650D8A38201990290060C665 /* Agent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Agent.cpp; sourceTree = "<group>"; };
+		650D8A39201990290060C665 /* Agent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Agent.hpp; sourceTree = "<group>"; };
+		650D8A3A201990290060C665 /* State.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = State.cpp; sourceTree = "<group>"; };
+		650D8A3B201990290060C665 /* State.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = State.hpp; sourceTree = "<group>"; };
+		650D8A3C201990290060C665 /* FileManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileManager.cpp; sourceTree = "<group>"; };
+		650D8A3D201990290060C665 /* FileManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FileManager.hpp; sourceTree = "<group>"; };
+		650D8A3E201990290060C665 /* Helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Helper.cpp; sourceTree = "<group>"; };
+		650D8A3F201990290060C665 /* Helper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Helper.hpp; sourceTree = "<group>"; };
+		650D8A40201990290060C665 /* Data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Data.cpp; sourceTree = "<group>"; };
+		650D8A41201990290060C665 /* Data.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Data.hpp; sourceTree = "<group>"; };
+		650D8A42201990290060C665 /* Contingence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Contingence.cpp; sourceTree = "<group>"; };
+		650D8A43201990290060C665 /* Contingence.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Contingence.hpp; sourceTree = "<group>"; };
+		650D8A4C201996A40060C665 /* ErrorManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ErrorManager.cpp; sourceTree = "<group>"; };
+		650D8A4D201996A40060C665 /* ErrorManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ErrorManager.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		650D8A272019900C0060C665 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		650D8A212019900C0060C665 = {
+			isa = PBXGroup;
+			children = (
+				650D8A2C2019900C0060C665 /* Threads_IVQNet2 */,
+				650D8A2B2019900C0060C665 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		650D8A2B2019900C0060C665 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				650D8A2A2019900C0060C665 /* Threads_IVQNet2 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		650D8A2C2019900C0060C665 /* Threads_IVQNet2 */ = {
+			isa = PBXGroup;
+			children = (
+				650D8A2D2019900C0060C665 /* main.cpp */,
+				650D8A4C201996A40060C665 /* ErrorManager.cpp */,
+				650D8A4D201996A40060C665 /* ErrorManager.hpp */,
+				650D8A34201990290060C665 /* Param.cpp */,
+				650D8A35201990290060C665 /* Param.hpp */,
+				650D8A36201990290060C665 /* NeuralNetwork.cpp */,
+				650D8A37201990290060C665 /* NeuralNetwork.hpp */,
+				650D8A38201990290060C665 /* Agent.cpp */,
+				650D8A39201990290060C665 /* Agent.hpp */,
+				650D8A3A201990290060C665 /* State.cpp */,
+				650D8A3B201990290060C665 /* State.hpp */,
+				650D8A3C201990290060C665 /* FileManager.cpp */,
+				650D8A3D201990290060C665 /* FileManager.hpp */,
+				650D8A3E201990290060C665 /* Helper.cpp */,
+				650D8A3F201990290060C665 /* Helper.hpp */,
+				650D8A40201990290060C665 /* Data.cpp */,
+				650D8A41201990290060C665 /* Data.hpp */,
+				650D8A42201990290060C665 /* Contingence.cpp */,
+				650D8A43201990290060C665 /* Contingence.hpp */,
+			);
+			path = Threads_IVQNet2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		650D8A292019900C0060C665 /* Threads_IVQNet2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 650D8A312019900C0060C665 /* Build configuration list for PBXNativeTarget "Threads_IVQNet2" */;
+			buildPhases = (
+				650D8A262019900C0060C665 /* Sources */,
+				650D8A272019900C0060C665 /* Frameworks */,
+				650D8A282019900C0060C665 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Threads_IVQNet2;
+			productName = Threads_IVQNet2;
+			productReference = 650D8A2A2019900C0060C665 /* Threads_IVQNet2 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		650D8A222019900C0060C665 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Andre Valdivia";
+				TargetAttributes = {
+					650D8A292019900C0060C665 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 650D8A252019900C0060C665 /* Build configuration list for PBXProject "Threads_IVQNet2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 650D8A212019900C0060C665;
+			productRefGroup = 650D8A2B2019900C0060C665 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				650D8A292019900C0060C665 /* Threads_IVQNet2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		650D8A262019900C0060C665 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650D8A2E2019900C0060C665 /* main.cpp in Sources */,
+				650D8A46201990290060C665 /* Agent.cpp in Sources */,
+				650D8A4E201996A40060C665 /* ErrorManager.cpp in Sources */,
+				650D8A47201990290060C665 /* State.cpp in Sources */,
+				650D8A4B201990290060C665 /* Contingence.cpp in Sources */,
+				650D8A4A201990290060C665 /* Data.cpp in Sources */,
+				650D8A48201990290060C665 /* FileManager.cpp in Sources */,
+				650D8A49201990290060C665 /* Helper.cpp in Sources */,
+				650D8A44201990290060C665 /* Param.cpp in Sources */,
+				650D8A45201990290060C665 /* NeuralNetwork.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		650D8A2F2019900C0060C665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		650D8A302019900C0060C665 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		650D8A322019900C0060C665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		650D8A332019900C0060C665 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		650D8A252019900C0060C665 /* Build configuration list for PBXProject "Threads_IVQNet2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				650D8A2F2019900C0060C665 /* Debug */,
+				650D8A302019900C0060C665 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		650D8A312019900C0060C665 /* Build configuration list for PBXNativeTarget "Threads_IVQNet2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				650D8A322019900C0060C665 /* Debug */,
+				650D8A332019900C0060C665 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 650D8A222019900C0060C665 /* Project object */;
+}

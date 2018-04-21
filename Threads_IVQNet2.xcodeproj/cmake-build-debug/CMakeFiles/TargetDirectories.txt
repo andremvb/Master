@@ -1,0 +1,3 @@
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2.xcodeproj/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2.xcodeproj/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/Andre/Dropbox/Maestria Informatica/Tesis/Algoritmo Maestria/Threads_IVQNet2/Threads_IVQNet2.xcodeproj/cmake-build-debug/CMakeFiles/Threads_IVQNet2_xcodeproj.dir
