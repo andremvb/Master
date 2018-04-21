@@ -1,6 +1,6 @@
 //
 //  Data.hpp
-//  Red Neuronal IVQL
+//  IVQ Neural Network
 //
 //  Created by Andre Valdivia on 16/12/16.
 //  Copyright © 2016 Andre Valdivia. All rights reserved.
@@ -31,14 +31,14 @@ public:
  */
 class Data {
 private:
-    struct Batch{
+    struct DataIndexes{
         vector<int> test;
         vector<int> train;
     };
 
     vector<int> classes;                                        //Vector del numero de clases por cada data set
-    vector<int> dimentions;                                     //Vector del numero de dimensiones por cada data set
-    int totalDimentions = 0;                                    //Numero total de dimensiones
+    vector<int> dimensions;                                     //Vector del numero de dimensiones por cada data set
+    int totalDimensions = 0;                                    //Numero total de dimensiones
     int totalClasses = 0;                                       //Numero total de clases
 
     int k = 0;                                                  //Numero de folds
@@ -49,8 +49,8 @@ private:
     vector<int>::iterator itTest;
     int actualBatch = 0;
 
-    vector<vector<oneData>> data;                               //1-Batches.2-
-    vector<Batch> batches;                                      //Donde se enceuntran los indices de los indices
+    vector<vector<oneData>> data;                               //1-Batch. 2-Data
+    vector<DataIndexes> dataIndexes;                            //Donde se enceuntran los indices de los indices
 
 public:
     Data(){};
@@ -66,7 +66,7 @@ public:
     
     
     void shuffleDataTrain();                                    //Mezclar el train
-    void shuffleActualBatch();
+    void shuffleBatch(int batch);
     void resetTestPointer();
     void resetTrainPointer();
 

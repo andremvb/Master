@@ -16,7 +16,7 @@ using namespace std;
 void NeuralNetwork::setNetwork(Data& data, Params& p){
     this->numActions = p.numActions;
     this->classes = data.getClassesPerBatch();
-//    this->dimentionsProblem = data.dimentions;
+//    this->dimentionsProblem = data.dimensions;
     this->numberProblems = (int)classes.size();
     this->p = &p;
 //    this->totalClasses = data.totalClasses;

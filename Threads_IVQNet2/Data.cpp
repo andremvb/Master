@@ -55,16 +55,16 @@ void Data::printDescription(){
     }
     
     cout<<endl<< "Dimensiones:" <<endl;
-    for (int i = 0 ; i < dimentions.size(); i++) {
-        cout<<"Data set "<<i<<" : "<<dimentions[i]<<endl;
+    for (int i = 0 ; i < dimensions.size(); i++) {
+        cout<<"Data set "<<i<<" : "<<dimensions[i]<<endl;
     }
     cout<<endl;
     
     cout<<"Descripcion de batchs: "<<k<<" folds"<<endl;
-    for (int i = 0; i < batches.size(); ++i) {
+    for (int i = 0; i < dataIndexes.size(); ++i) {
         cout<<"Batch "<<i<<":"<<endl;
-        cout<<"\t Train: "<<batches[i].train.size();
-        cout<<"\t Test: "<<batches[i].test.size();
+        cout<<"\t Train: "<<dataIndexes[i].train.size();
+        cout<<"\t Test: "<<dataIndexes[i].test.size();
     }
     cout<<endl<<"----------------------------"<<endl;
 }
@@ -84,11 +84,11 @@ void Data::printData(){
 }
 
 void Data::shuffleDataTrain(){
-    std::random_shuffle(batches[actualBatch].train.begin(), batches[actualBatch].train.end());
+    std::random_shuffle(dataIndexes[actualBatch].train.begin(), dataIndexes[actualBatch].train.end());
 }
 
-void Data::shuffleActualBatch(){
-        std::random_shuffle(data[actualBatch].begin(), data[actualBatch].end());
+void Data::shuffleBatch(int batch) {
+        std::random_shuffle(data[batch].begin(), data[batch].end());
 }
 
 void Data::insertOneData(vector<double> input,int output){
@@ -169,52 +169,64 @@ void Data::normalize(){
 void Data::getTest(vector<double> &input, int &output){
     input = data[actualBatch][*itTest].input;
     output = data[actualBatch][*itTest].output;
-    if (itTest != batches[actualBatch].test.end()-1) {
+    if (itTest != dataIndexes[actualBatch].test.end()-1) {
         itTest++;
     } else{
-        itTest = batches[actualBatch].test.begin();
+        itTest = dataIndexes[actualBatch].test.begin();
     }
 }
 
 void Data::getTrain(vector<double> &input, int &output) {
     input = data[actualBatch][*itTrain].input;
     output = data[actualBatch][*itTrain].output;
-    if (itTrain != batches[actualBatch].train.end()-1) {
+    if (itTrain != dataIndexes[actualBatch].train.end()-1) {
         itTrain++;
     } else{
-        itTrain = batches[actualBatch].train.begin();
+        itTrain = dataIndexes[actualBatch].train.begin();
     }
 }
 
 void Data::initKFold(int k){
     this->k = k;
-    batches.resize(data.size());
+    vector<int> rangesK;
+    dataIndexes.resize(data.size());
     for (int i = 0; i < data.size(); ++i) {
+        shuffleBatch(i);
+        rangesK.push_back(data[i].size()/k);
         if (k==1){
-            batches[i].train.resize(data[i].size());
-            batches[i].test.resize(data[i].size());
+            dataIndexes[i].train.resize(data[i].size());
+            dataIndexes[i].test.resize(data[i].size());
             for (int j = 0; j < data[i].size(); ++j) {
-                batches[i].test[j] = j;
-                batches[i].train[j] = j;
+                dataIndexes[i].test[j] = j;
+                dataIndexes[i].train[j] = j;
             }
         }else{
-            batches[i].test.resize(data[i].size()/k);
-            batches[i].train.resize(data[i].size()-(data[i].size()/k));
-            int counter = 0;
-            for (int &j : batches[i].test) {
-                j = counter;
-                data[i][j].first = true;
-                counter++;
+            auto itBatch = data[i].begin();
+            //Asignando numero de fold a oneData
+            for (int j = 0; j < k; ++j) {
+                if (j != k-1){
+                    for (int m = 0; m < rangesK[i]; ++m,itBatch++) {
+                        itBatch->fold = j;
+                    }
+                }else{
+                    for (; itBatch != data[i].end(); itBatch++) {
+                        itBatch->fold = j;
+                    }
+                }
             }
-            for(auto &j : batches[i].train){
-                j = counter;
-                counter++;
+            //Asignar indices a dataIndexes
+            for (int j = 0; j < data[i].size(); ++j) {
+                if(data[i][j].fold == actualFold){
+                    dataIndexes[i].test.push_back(j);
+                }else{
+                    dataIndexes[i].train.push_back(j);
+                }
             }
         }
     }
-    shuffleActualBatch();
-    itTrain = batches[actualBatch].train.begin();
-    itTest = batches[actualBatch].test.begin();
+//    shuffleBatch(0);
+    itTrain = dataIndexes[actualBatch].train.begin();
+    itTest = dataIndexes[actualBatch].test.begin();
 }
 
 //No vuelve a hacer shuffle de la data
@@ -222,35 +234,17 @@ void Data::initKFold(int k){
 //Solamente vuelve a empezar los test desde el fold 0
 void Data::resetFold(){
     actualFold = 0;
-    batches[actualBatch].test.clear();
-    batches[actualBatch].train.clear();
-    for (int i = 0; i < data.size(); ++i) {
-        batches[i].test.clear();
-        batches[i].train.clear();
-        if (k == 1){
-            batches[i].train.resize(data[i].size());
-            batches[i].test.resize(data[i].size());
-            for (int j = 0; j < data[i].size(); ++j) {
-                batches[i].test[j] = j;
-                batches[i].train[j] = j;
-            }
-        }
-        else{
-            batches[i].test.resize(data[i].size()/k);
-            batches[i].train.resize(data[i].size()-(data[i].size()/k));
-            int counter = 0;
-            for (int &j : batches[i].test) {
-                j = counter;
-                counter++;
-            }
-            for(auto &j : batches[i].train){
-                j = counter;
-                counter++;
-            }
+    dataIndexes[actualBatch].test.clear();
+    dataIndexes[actualBatch].train.clear();
+    for (int i = 0; i < data[actualBatch].size(); ++i) {
+        if (data[actualBatch][i].fold == actualFold){
+            dataIndexes[actualBatch].test.push_back(i);
+        }else{
+            dataIndexes[actualBatch].train.push_back(i);
         }
     }
-    itTrain = batches[actualBatch].train.begin();
-    itTest = batches[actualBatch].test.begin();
+    itTrain = dataIndexes[actualBatch].train.begin();
+    itTest = dataIndexes[actualBatch].test.begin();
 }
 
 void Data::nextFold(){
@@ -260,32 +254,18 @@ void Data::nextFold(){
         cout<<"Se reinicio el fold en Data::nextFold"<<endl;
     }else{
         int range = data[actualBatch].size()/k;
-        batches[actualBatch].test.clear();
-        batches[actualBatch].train.clear();
-        if (actualFold != k - 1) {
-            int counter = 0;
-            for (int j = 0; j < data[actualBatch].size(); ++j) {
-                if (data[actualBatch][j].first == false && counter < range){
-                    batches[actualBatch].test.push_back(j);
-                    data[actualBatch][j].first = true;
-                    counter++;
-                }else{
-                    batches[actualBatch].train.push_back(j);
-                }
-            }
-        }else {
-            for (int j = 0; j < data[actualBatch].size(); j++) {
-                if (data[actualBatch][j].first) {
-                    batches[actualBatch].train.push_back(j);
-                }else{
-                    batches[actualBatch].test.push_back(j);
-                    data[actualBatch][j].first = true;
-                }
+        dataIndexes[actualBatch].test.clear();
+        dataIndexes[actualBatch].train.clear();
+        for (int j = 0; j < data[actualBatch].size(); ++j) {
+            if (data[actualBatch][j].fold == actualFold){
+                dataIndexes[actualBatch].test.push_back(j);
+            }else{
+                dataIndexes[actualBatch].train.push_back(j);
             }
         }
     }
-    itTrain = batches[actualBatch].train.begin();
-    itTest = batches[actualBatch].test.begin();
+    itTrain = dataIndexes[actualBatch].train.begin();
+    itTest = dataIndexes[actualBatch].test.begin();
 }
 
 void Data::XOR(){
@@ -294,7 +274,7 @@ void Data::XOR(){
     insertOneData({0,1}, 1);
     insertOneData({1,0}, 1);
     insertOneData({1,1}, 0);
-    shuffleActualBatch();
+    shuffleBatch(data.size()-1);
 }
 
 void Data::Seno(int numData,int numberClasses){
@@ -317,7 +297,7 @@ void  Data::Ex0(){
         out = discretize(out, 10, 0,pow(100, 2));
         insertOneData({static_cast<double>(i)}, out);
     }
-    shuffleActualBatch();
+    shuffleBatch(data.size()-1);
 }
 
 void Data::Ex1(int numData,int numberClasses){
@@ -377,13 +357,13 @@ void Data::openDataSet(string name, positionClass pos, char separator){
     if (k != 0) {
         initKFold(k);
     }
-    dimentions.push_back((int)data[data.size()-1][0].second.input.size());
-    //totalDimentions+=dimentions.back();
+    dimensions.push_back((int)data[data.size()-1][0].input.size());
+    //totalDimensions+=dimensions.back();
     //totalClasses += classes.back();
     
     //Con la nueva configuracion de olvido catastrofico
-    if (totalDimentions < dimentions.back()) {
-        totalDimentions = dimentions.back();
+    if (totalDimensions < dimensions.back()) {
+        totalDimensions = dimensions.back();
     }
     if (totalClasses < classes.back()) {
         totalClasses = classes.back();
@@ -441,27 +421,26 @@ void Data::loadAggregation(){
 }
 
 void Data::nextBatch() {
-    if (actualBatch+1 < batches.size()){
+    if (actualBatch+1 < dataIndexes.size()){
         actualBatch++;
     }else{
         cout<<"Batches mayor a su rango"<<endl;
         actualBatch = 0;
     }
-    itTrain = batches[actualBatch].train.begin();
-    itTest = batches[actualBatch].test.begin();
-    shuffleActualBatch();
+    itTrain = dataIndexes[actualBatch].train.begin();
+    itTest = dataIndexes[actualBatch].test.begin();
 }
 
 int Data::getTrainSize() {
-    return batches[actualBatch].train.size();
+    return dataIndexes[actualBatch].train.size();
 }
 
 int Data::getTestSize() {
-    return batches[actualBatch].test.size();
+    return dataIndexes[actualBatch].test.size();
 }
 
 int Data::getTotalDimentions() {
-    return totalDimentions;
+    return totalDimensions;
 }
 
 int Data::getTotalClasses() {
@@ -477,9 +456,9 @@ vector<int> Data::getClassesPerBatch() {
 }
 
 void Data::resetTestPointer() {
-    itTest = batches[actualBatch].test.begin();
+    itTest = dataIndexes[actualBatch].test.begin();
 }
 
 void Data::resetTrainPointer() {
-    itTrain = batches[actualBatch].train.begin();
+    itTrain = dataIndexes[actualBatch].train.begin();
 }
