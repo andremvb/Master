@@ -11,7 +11,69 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6441a272-a0cb-43c9-8be5-c8584ba4ffe7" name="Default" comment="" />
+    <list default="true" id="6441a272-a0cb-43c9-8be5-c8584ba4ffe7" name="Default" comment="Working, with">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Threads_IVQNet2.xcodeproj/project.xcworkspace/xcuserdata/Andre.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/Threads_IVQNet2.xcodeproj/project.xcworkspace/xcuserdata/Andre.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change beforePath="$PROJECT_DIR$/Threads_IVQNet2.xcodeproj/xcuserdata/Andre.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="$PROJECT_DIR$/Threads_IVQNet2.xcodeproj/xcuserdata/Andre.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
+      <change beforePath="$PROJECT_DIR$/Threads_IVQNet2/Contingence.cpp" afterPath="$PROJECT_DIR$/Threads_IVQNet2/Contingence.cpp" />
+      <change beforePath="$PROJECT_DIR$/Threads_IVQNet2/Contingence.hpp" afterPath="$PROJECT_DIR$/Threads_IVQNet2/Contingence.hpp" />
+      <change beforePath="$PROJECT_DIR$/Threads_IVQNet2/Data.cpp" afterPath="$PROJECT_DIR$/Threads_IVQNet2/Data.cpp" />
+      <change beforePath="$PROJECT_DIR$/Threads_IVQNet2/Data.hpp" afterPath="$PROJECT_DIR$/Threads_IVQNet2/Data.hpp" />
+      <change beforePath="$PROJECT_DIR$/Threads_IVQNet2/ErrorManager.cpp" afterPath="$PROJECT_DIR$/Threads_IVQNet2/ErrorManager.cpp" />
+      <change beforePath="$PROJECT_DIR$/Threads_IVQNet2/ErrorManager.hpp" afterPath="$PROJECT_DIR$/Threads_IVQNet2/ErrorManager.hpp" />
+      <change beforePath="$PROJECT_DIR$/Threads_IVQNet2/Helper.hpp" afterPath="$PROJECT_DIR$/Threads_IVQNet2/Helper.hpp" />
+      <change beforePath="$PROJECT_DIR$/Threads_IVQNet2/Param.cpp" afterPath="$PROJECT_DIR$/Threads_IVQNet2/Param.cpp" />
+      <change beforePath="$PROJECT_DIR$/Threads_IVQNet2/Param.hpp" afterPath="$PROJECT_DIR$/Threads_IVQNet2/Param.hpp" />
+      <change beforePath="$PROJECT_DIR$/Threads_IVQNet2/main.cpp" afterPath="$PROJECT_DIR$/Threads_IVQNet2/main.cpp" />
+      <change beforePath="$PROJECT_DIR$/build/Debug/Threads_IVQNet2" afterPath="$PROJECT_DIR$/build/Debug/Threads_IVQNet2" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Agent.dia" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Agent.dia" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Agent.o" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Agent.o" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Contingence.dia" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Contingence.dia" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Contingence.o" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Contingence.o" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Data.dia" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Data.dia" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Data.o" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Data.o" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/ErrorManager.dia" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/ErrorManager.dia" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/ErrorManager.o" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/ErrorManager.o" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/FileManager.dia" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/FileManager.dia" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/FileManager.o" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/FileManager.o" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Helper.dia" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Helper.dia" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Helper.o" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Helper.o" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/NeuralNetwork.dia" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/NeuralNetwork.dia" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/NeuralNetwork.o" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/NeuralNetwork.o" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Param.dia" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Param.dia" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Param.o" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Param.o" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/State.dia" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/State.dia" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/State.o" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/State.o" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Threads_IVQNet2_dependency_info.dat" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/Threads_IVQNet2_dependency_info.dat" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/main.dia" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/main.dia" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/main.o" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/Objects-normal/x86_64/main.o" />
+      <change beforePath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/dgph" afterPath="$PROJECT_DIR$/build/Threads_IVQNet2.build/Debug/Threads_IVQNet2.build/dgph" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeCCompiler.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeCCompiler.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeCXXCompiler.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeCXXCompiler.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_C.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_C.bin" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_CXX.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_CXX.bin" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/a.out" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/a.out" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX/a.out" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX/a.out" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/Agent.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/Agent.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/Contingence.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/Contingence.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/Data.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/Data.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/ErrorManager.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/ErrorManager.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/FileManager.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/FileManager.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/Helper.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/Helper.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/NeuralNetwork.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/NeuralNetwork.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/Param.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/Param.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/State.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/State.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/Threads_IVQNet2/main.cpp.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/flags.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Threads_IVQNet2.dir/link.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Threads_IVQNet2" afterPath="$PROJECT_DIR$/cmake-build-debug/Threads_IVQNet2" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Threads_IVQNet2.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/Threads_IVQNet2.cbp" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,26 +85,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="178" column="17" lean-forward="false" selection-start-line="178" selection-start-column="17" selection-end-line="178" selection-end-column="17" />
+            <state relative-caret-position="344">
+              <caret line="190" column="13" lean-forward="false" selection-start-line="190" selection-start-column="13" selection-end-line="190" selection-end-column="13" />
               <folding>
-                <element signature="e#617#963#0" expanded="false" />
+                <element signature="e#289#308#0" expanded="true" />
                 <element signature="e#965#1761#0" expanded="false" />
-                <element signature="e#6760#11390#0" expanded="false" />
+                <element signature="e#6666#9015#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ErrorManager.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/ErrorManager.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -50,8 +102,8 @@
       <file leaf-file-name="Helper.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Helper.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="1000">
+              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -60,8 +112,18 @@
       <file leaf-file-name="State.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/State.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
+            <state relative-caret-position="2360">
               <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ErrorManager.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/ErrorManager.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="34" column="92" lean-forward="false" selection-start-line="34" selection-start-column="92" selection-end-line="34" selection-end-column="92" />
               <folding />
             </state>
           </provider>
@@ -70,8 +132,8 @@
       <file leaf-file-name="Contingence.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Contingence.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="1480">
+              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -80,8 +142,18 @@
       <file leaf-file-name="NeuralNetwork.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/NeuralNetwork.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="306" column="28" lean-forward="false" selection-start-line="306" selection-start-column="28" selection-end-line="306" selection-end-column="28" />
+            <state relative-caret-position="2900">
+              <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="random" pinned="false" current-in-tab="false">
+        <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/random">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42220">
+              <caret line="2111" column="0" lean-forward="false" selection-start-line="2111" selection-start-column="0" selection-end-line="2111" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,19 +162,21 @@
       <file leaf-file-name="Agent.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Agent.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+            <state relative-caret-position="2480">
+              <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Data.hpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Data.hpp">
+      <file leaf-file-name="ErrorManager.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/ErrorManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="1060">
+              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding>
+                <element signature="e#2241#4578#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,34 +184,34 @@
       <file leaf-file-name="Data.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Data.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="180" column="41" lean-forward="false" selection-start-line="180" selection-start-column="41" selection-end-line="180" selection-end-column="41" />
+            <state relative-caret-position="3800">
+              <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
               <folding>
                 <element signature="e#265#369#0" expanded="false" />
                 <element signature="e#371#619#0" expanded="false" />
-                <element signature="e#621#1821#0" expanded="false" />
-                <element signature="e#1823#2275#0" expanded="false" />
-                <element signature="e#2523#2633#0" expanded="false" />
-                <element signature="e#2635#3783#0" expanded="false" />
-                <element signature="e#8869#9234#0" expanded="false" />
-                <element signature="e#9505#10273#0" expanded="false" />
-                <element signature="e#11792#11897#0" expanded="false" />
-                <element signature="e#11899#12005#0" expanded="false" />
-                <element signature="e#12007#12112#0" expanded="false" />
-                <element signature="e#12114#12223#0" expanded="false" />
-                <element signature="e#12225#12332#0" expanded="false" />
-                <element signature="e#12334#12444#0" expanded="false" />
-                <element signature="e#12446#12558#0" expanded="false" />
-                <element signature="e#12560#12680#0" expanded="false" />
-                <element signature="e#12682#12800#0" expanded="false" />
-                <element signature="e#12802#12926#0" expanded="false" />
-                <element signature="e#12928#13232#0" expanded="false" />
-                <element signature="e#13234#13308#0" expanded="false" />
-                <element signature="e#13310#13382#0" expanded="false" />
-                <element signature="e#13384#13446#0" expanded="false" />
-                <element signature="e#13448#13504#0" expanded="false" />
-                <element signature="e#13506#13560#0" expanded="false" />
-                <element signature="e#13562#13624#0" expanded="false" />
+                <element signature="e#621#1833#0" expanded="false" />
+                <element signature="e#1835#2287#0" expanded="false" />
+                <element signature="e#2535#2645#0" expanded="false" />
+                <element signature="e#2647#3795#0" expanded="false" />
+                <element signature="e#8454#8648#0" expanded="false" />
+                <element signature="e#8650#9015#0" expanded="false" />
+                <element signature="e#9017#9291#0" expanded="false" />
+                <element signature="e#9293#10061#0" expanded="false" />
+                <element signature="e#10063#11571#0" expanded="false" />
+                <element signature="e#11573#11678#0" expanded="false" />
+                <element signature="e#11680#11786#0" expanded="false" />
+                <element signature="e#11788#11893#0" expanded="false" />
+                <element signature="e#11895#12004#0" expanded="false" />
+                <element signature="e#12006#12113#0" expanded="false" />
+                <element signature="e#12115#12225#0" expanded="false" />
+                <element signature="e#12227#12339#0" expanded="false" />
+                <element signature="e#12341#12461#0" expanded="false" />
+                <element signature="e#12463#12581#0" expanded="false" />
+                <element signature="e#12583#12707#0" expanded="false" />
+                <element signature="e#13001#13079#0" expanded="false" />
+                <element signature="e#13081#13157#0" expanded="false" />
+                <element signature="e#13159#13221#0" expanded="false" />
+                <element signature="e#13223#13279#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -150,19 +224,28 @@
       <find>dataIndex</find>
       <find>setDataIndex</find>
       <find>resetFol</find>
+      <find>operator</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Threads_IVQNet2/Contingence.cpp" />
         <option value="$PROJECT_DIR$/Threads_IVQNet2/Contingence.hpp" />
         <option value="$PROJECT_DIR$/Threads_IVQNet2/NeuralNetwork.hpp" />
         <option value="$PROJECT_DIR$/Threads_IVQNet2/Agent.cpp" />
         <option value="$PROJECT_DIR$/Threads_IVQNet2/NeuralNetwork.cpp" />
-        <option value="$PROJECT_DIR$/Threads_IVQNet2/main.cpp" />
-        <option value="$PROJECT_DIR$/Threads_IVQNet2/Data.cpp" />
+        <option value="$PROJECT_DIR$/Threads_IVQNet2/Helper.hpp" />
+        <option value="$PROJECT_DIR$/Threads_IVQNet2/Param.cpp" />
+        <option value="$PROJECT_DIR$/Threads_IVQNet2/Param.hpp" />
+        <option value="$PROJECT_DIR$/Threads_IVQNet2/ErrorManager.hpp" />
         <option value="$PROJECT_DIR$/Threads_IVQNet2/Data.hpp" />
+        <option value="$PROJECT_DIR$/Threads_IVQNet2/Data.cpp" />
+        <option value="$PROJECT_DIR$/Threads_IVQNet2/Contingence.cpp" />
+        <option value="$PROJECT_DIR$/Threads_IVQNet2/ErrorManager.cpp" />
+        <option value="$PROJECT_DIR$/Threads_IVQNet2/main.cpp" />
       </list>
     </option>
   </component>
@@ -174,9 +257,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="874" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -200,6 +282,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -236,6 +319,7 @@
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -276,34 +360,44 @@
       <updated>1524193896505</updated>
       <workItem from="1524193897681" duration="21794000" />
       <workItem from="1524252956558" duration="311000" />
-      <workItem from="1524274947637" duration="9400000" />
+      <workItem from="1524274947637" duration="15403000" />
+      <workItem from="1524497945327" duration="20041000" />
+      <workItem from="1524674793927" duration="89000" />
     </task>
+    <task id="LOCAL-00001" summary="Working again :)">
+      <created>1524330159082</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524330159082</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31505000" />
+    <option name="totallyTimeSpent" value="57638000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282353" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3282353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297362" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733813" sideWeight="0.50277776" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733813" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5164706" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5143885" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733813" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -313,30 +407,199 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Working again :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working again :)" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Threads_IVQNet2/main.cpp</url>
-          <line>157</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Threads_IVQNet2/main.cpp</url>
-          <line>161</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="22" />
+      <option name="time" value="43" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="errorEpochTrain" language="ObjectiveC" />
+        <watch expression="errorEpochTrain" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>errorEpochTrain</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/random">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42220">
+          <caret line="2111" column="0" lean-forward="false" selection-start-line="2111" selection-start-column="0" selection-end-line="2111" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Agent.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2480">
+          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/ErrorManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1060">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="e#2241#4578#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Data.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3800">
+          <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+          <folding>
+            <element signature="e#265#369#0" expanded="false" />
+            <element signature="e#371#619#0" expanded="false" />
+            <element signature="e#621#1833#0" expanded="false" />
+            <element signature="e#1835#2287#0" expanded="false" />
+            <element signature="e#2535#2645#0" expanded="false" />
+            <element signature="e#2647#3795#0" expanded="false" />
+            <element signature="e#8454#8648#0" expanded="false" />
+            <element signature="e#8650#9015#0" expanded="false" />
+            <element signature="e#9017#9291#0" expanded="false" />
+            <element signature="e#9293#10061#0" expanded="false" />
+            <element signature="e#10063#11571#0" expanded="false" />
+            <element signature="e#11573#11678#0" expanded="false" />
+            <element signature="e#11680#11786#0" expanded="false" />
+            <element signature="e#11788#11893#0" expanded="false" />
+            <element signature="e#11895#12004#0" expanded="false" />
+            <element signature="e#12006#12113#0" expanded="false" />
+            <element signature="e#12115#12225#0" expanded="false" />
+            <element signature="e#12227#12339#0" expanded="false" />
+            <element signature="e#12341#12461#0" expanded="false" />
+            <element signature="e#12463#12581#0" expanded="false" />
+            <element signature="e#12583#12707#0" expanded="false" />
+            <element signature="e#13001#13079#0" expanded="false" />
+            <element signature="e#13081#13157#0" expanded="false" />
+            <element signature="e#13159#13221#0" expanded="false" />
+            <element signature="e#13223#13279#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#289#308#0" expanded="true" />
+            <element signature="e#965#1761#0" expanded="false" />
+            <element signature="e#6666#9015#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Helper.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/ErrorManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#2241#4578#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/State.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2360">
+          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Contingence.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1120">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/NeuralNetwork.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2900">
+          <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Agent.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2480">
+          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Data.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="72" column="9" lean-forward="false" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Data.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4540">
+          <caret line="227" column="0" lean-forward="false" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+          <folding>
+            <element signature="e#265#369#0" expanded="false" />
+            <element signature="e#371#619#0" expanded="false" />
+            <element signature="e#621#1833#0" expanded="false" />
+            <element signature="e#1835#2287#0" expanded="false" />
+            <element signature="e#2535#2645#0" expanded="false" />
+            <element signature="e#2647#3795#0" expanded="false" />
+            <element signature="e#8454#8648#0" expanded="false" />
+            <element signature="e#8650#9015#0" expanded="false" />
+            <element signature="e#9017#9291#0" expanded="false" />
+            <element signature="e#9293#10061#0" expanded="false" />
+            <element signature="e#10063#11571#0" expanded="false" />
+            <element signature="e#11573#11678#0" expanded="false" />
+            <element signature="e#11680#11786#0" expanded="false" />
+            <element signature="e#11788#11893#0" expanded="false" />
+            <element signature="e#11895#12004#0" expanded="false" />
+            <element signature="e#12006#12113#0" expanded="false" />
+            <element signature="e#12115#12225#0" expanded="false" />
+            <element signature="e#12227#12339#0" expanded="false" />
+            <element signature="e#12341#12461#0" expanded="false" />
+            <element signature="e#12463#12581#0" expanded="false" />
+            <element signature="e#12583#12707#0" expanded="false" />
+            <element signature="e#13001#13079#0" expanded="false" />
+            <element signature="e#13081#13157#0" expanded="false" />
+            <element signature="e#13159#13221#0" expanded="false" />
+            <element signature="e#13223#13279#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -352,7 +615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -368,7 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="30" column="43" lean-forward="false" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -387,29 +648,29 @@
           <folding>
             <element signature="e#265#369#0" expanded="false" />
             <element signature="e#371#619#0" expanded="false" />
-            <element signature="e#621#1821#0" expanded="false" />
-            <element signature="e#1823#2275#0" expanded="false" />
-            <element signature="e#2523#2633#0" expanded="false" />
-            <element signature="e#2635#3783#0" expanded="false" />
-            <element signature="e#8869#9234#0" expanded="false" />
-            <element signature="e#9505#10273#0" expanded="false" />
-            <element signature="e#11792#11897#0" expanded="false" />
-            <element signature="e#11899#12005#0" expanded="false" />
-            <element signature="e#12007#12112#0" expanded="false" />
-            <element signature="e#12114#12223#0" expanded="false" />
-            <element signature="e#12225#12332#0" expanded="false" />
-            <element signature="e#12334#12444#0" expanded="false" />
-            <element signature="e#12446#12558#0" expanded="false" />
-            <element signature="e#12560#12680#0" expanded="false" />
-            <element signature="e#12682#12800#0" expanded="false" />
-            <element signature="e#12802#12926#0" expanded="false" />
-            <element signature="e#12928#13232#0" expanded="false" />
-            <element signature="e#13234#13308#0" expanded="false" />
-            <element signature="e#13310#13382#0" expanded="false" />
-            <element signature="e#13384#13446#0" expanded="false" />
-            <element signature="e#13448#13504#0" expanded="false" />
-            <element signature="e#13506#13560#0" expanded="false" />
-            <element signature="e#13562#13624#0" expanded="false" />
+            <element signature="e#621#1833#0" expanded="false" />
+            <element signature="e#1835#2287#0" expanded="false" />
+            <element signature="e#2535#2645#0" expanded="false" />
+            <element signature="e#2647#3795#0" expanded="false" />
+            <element signature="e#8454#8648#0" expanded="false" />
+            <element signature="e#8650#9015#0" expanded="false" />
+            <element signature="e#9017#9291#0" expanded="false" />
+            <element signature="e#9293#10061#0" expanded="false" />
+            <element signature="e#10063#11571#0" expanded="false" />
+            <element signature="e#11573#11678#0" expanded="false" />
+            <element signature="e#11680#11786#0" expanded="false" />
+            <element signature="e#11788#11893#0" expanded="false" />
+            <element signature="e#11895#12004#0" expanded="false" />
+            <element signature="e#12006#12113#0" expanded="false" />
+            <element signature="e#12115#12225#0" expanded="false" />
+            <element signature="e#12227#12339#0" expanded="false" />
+            <element signature="e#12341#12461#0" expanded="false" />
+            <element signature="e#12463#12581#0" expanded="false" />
+            <element signature="e#12583#12707#0" expanded="false" />
+            <element signature="e#13001#13079#0" expanded="false" />
+            <element signature="e#13081#13157#0" expanded="false" />
+            <element signature="e#13159#13221#0" expanded="false" />
+            <element signature="e#13223#13279#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -419,9 +680,9 @@
         <state relative-caret-position="3140">
           <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
           <folding>
-            <element signature="e#617#963#0" expanded="false" />
+            <element signature="e#289#308#0" expanded="true" />
             <element signature="e#965#1761#0" expanded="false" />
-            <element signature="e#6760#11390#0" expanded="false" />
+            <element signature="e#6666#9015#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -430,7 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -446,7 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -462,7 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="30" column="43" lean-forward="false" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -481,29 +739,29 @@
           <folding>
             <element signature="e#265#369#0" expanded="false" />
             <element signature="e#371#619#0" expanded="false" />
-            <element signature="e#621#1821#0" expanded="false" />
-            <element signature="e#1823#2275#0" expanded="false" />
-            <element signature="e#2523#2633#0" expanded="false" />
-            <element signature="e#2635#3783#0" expanded="false" />
-            <element signature="e#8869#9234#0" expanded="false" />
-            <element signature="e#9505#10273#0" expanded="false" />
-            <element signature="e#11792#11897#0" expanded="false" />
-            <element signature="e#11899#12005#0" expanded="false" />
-            <element signature="e#12007#12112#0" expanded="false" />
-            <element signature="e#12114#12223#0" expanded="false" />
-            <element signature="e#12225#12332#0" expanded="false" />
-            <element signature="e#12334#12444#0" expanded="false" />
-            <element signature="e#12446#12558#0" expanded="false" />
-            <element signature="e#12560#12680#0" expanded="false" />
-            <element signature="e#12682#12800#0" expanded="false" />
-            <element signature="e#12802#12926#0" expanded="false" />
-            <element signature="e#12928#13232#0" expanded="false" />
-            <element signature="e#13234#13308#0" expanded="false" />
-            <element signature="e#13310#13382#0" expanded="false" />
-            <element signature="e#13384#13446#0" expanded="false" />
-            <element signature="e#13448#13504#0" expanded="false" />
-            <element signature="e#13506#13560#0" expanded="false" />
-            <element signature="e#13562#13624#0" expanded="false" />
+            <element signature="e#621#1833#0" expanded="false" />
+            <element signature="e#1835#2287#0" expanded="false" />
+            <element signature="e#2535#2645#0" expanded="false" />
+            <element signature="e#2647#3795#0" expanded="false" />
+            <element signature="e#8454#8648#0" expanded="false" />
+            <element signature="e#8650#9015#0" expanded="false" />
+            <element signature="e#9017#9291#0" expanded="false" />
+            <element signature="e#9293#10061#0" expanded="false" />
+            <element signature="e#10063#11571#0" expanded="false" />
+            <element signature="e#11573#11678#0" expanded="false" />
+            <element signature="e#11680#11786#0" expanded="false" />
+            <element signature="e#11788#11893#0" expanded="false" />
+            <element signature="e#11895#12004#0" expanded="false" />
+            <element signature="e#12006#12113#0" expanded="false" />
+            <element signature="e#12115#12225#0" expanded="false" />
+            <element signature="e#12227#12339#0" expanded="false" />
+            <element signature="e#12341#12461#0" expanded="false" />
+            <element signature="e#12463#12581#0" expanded="false" />
+            <element signature="e#12583#12707#0" expanded="false" />
+            <element signature="e#13001#13079#0" expanded="false" />
+            <element signature="e#13081#13157#0" expanded="false" />
+            <element signature="e#13159#13221#0" expanded="false" />
+            <element signature="e#13223#13279#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -513,9 +771,9 @@
         <state relative-caret-position="3140">
           <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
           <folding>
-            <element signature="e#617#963#0" expanded="false" />
+            <element signature="e#289#308#0" expanded="true" />
             <element signature="e#965#1761#0" expanded="false" />
-            <element signature="e#6760#11390#0" expanded="false" />
+            <element signature="e#6666#9015#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -524,22 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/ErrorManager.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Contingence.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="30" column="43" lean-forward="false" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -547,7 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -555,55 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="321" column="0" lean-forward="false" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Helper.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/State.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Agent.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/ErrorManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/NeuralNetwork.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="306" column="28" lean-forward="false" selection-start-line="306" selection-start-column="28" selection-end-line="306" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Contingence.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -611,61 +803,176 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="257" column="8" lean-forward="false" selection-start-line="257" selection-start-column="8" selection-end-line="257" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iosfwd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Helper.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="27" column="94" lean-forward="true" selection-start-line="27" selection-start-column="94" selection-end-line="27" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/FileManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/FileManager.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Param.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="83" column="4" lean-forward="false" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Param.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Data.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="76" column="13" lean-forward="false" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Contingence.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/ErrorManager.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="34" column="92" lean-forward="false" selection-start-line="34" selection-start-column="92" selection-end-line="34" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Data.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3800">
+          <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+          <folding>
+            <element signature="e#265#369#0" expanded="false" />
+            <element signature="e#371#619#0" expanded="false" />
+            <element signature="e#621#1833#0" expanded="false" />
+            <element signature="e#1835#2287#0" expanded="false" />
+            <element signature="e#2535#2645#0" expanded="false" />
+            <element signature="e#2647#3795#0" expanded="false" />
+            <element signature="e#8454#8648#0" expanded="false" />
+            <element signature="e#8650#9015#0" expanded="false" />
+            <element signature="e#9017#9291#0" expanded="false" />
+            <element signature="e#9293#10061#0" expanded="false" />
+            <element signature="e#10063#11571#0" expanded="false" />
+            <element signature="e#11573#11678#0" expanded="false" />
+            <element signature="e#11680#11786#0" expanded="false" />
+            <element signature="e#11788#11893#0" expanded="false" />
+            <element signature="e#11895#12004#0" expanded="false" />
+            <element signature="e#12006#12113#0" expanded="false" />
+            <element signature="e#12115#12225#0" expanded="false" />
+            <element signature="e#12227#12339#0" expanded="false" />
+            <element signature="e#12341#12461#0" expanded="false" />
+            <element signature="e#12463#12581#0" expanded="false" />
+            <element signature="e#12583#12707#0" expanded="false" />
+            <element signature="e#13001#13079#0" expanded="false" />
+            <element signature="e#13081#13157#0" expanded="false" />
+            <element signature="e#13159#13221#0" expanded="false" />
+            <element signature="e#13223#13279#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/ErrorManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1060">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="e#2241#4578#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Contingence.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1480">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/random">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42220">
+          <caret line="2111" column="0" lean-forward="false" selection-start-line="2111" selection-start-column="0" selection-end-line="2111" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Helper.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/State.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2360">
+          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Agent.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2480">
+          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/NeuralNetwork.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2900">
+          <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="178" column="17" lean-forward="false" selection-start-line="178" selection-start-column="17" selection-end-line="178" selection-end-column="17" />
+        <state relative-caret-position="344">
+          <caret line="190" column="13" lean-forward="false" selection-start-line="190" selection-start-column="13" selection-end-line="190" selection-end-column="13" />
           <folding>
-            <element signature="e#617#963#0" expanded="false" />
+            <element signature="e#289#308#0" expanded="true" />
             <element signature="e#965#1761#0" expanded="false" />
-            <element signature="e#6760#11390#0" expanded="false" />
+            <element signature="e#6666#9015#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Data.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="180" column="41" lean-forward="false" selection-start-line="180" selection-start-column="41" selection-end-line="180" selection-end-column="41" />
-          <folding>
-            <element signature="e#265#369#0" expanded="false" />
-            <element signature="e#371#619#0" expanded="false" />
-            <element signature="e#621#1821#0" expanded="false" />
-            <element signature="e#1823#2275#0" expanded="false" />
-            <element signature="e#2523#2633#0" expanded="false" />
-            <element signature="e#2635#3783#0" expanded="false" />
-            <element signature="e#8869#9234#0" expanded="false" />
-            <element signature="e#9505#10273#0" expanded="false" />
-            <element signature="e#11792#11897#0" expanded="false" />
-            <element signature="e#11899#12005#0" expanded="false" />
-            <element signature="e#12007#12112#0" expanded="false" />
-            <element signature="e#12114#12223#0" expanded="false" />
-            <element signature="e#12225#12332#0" expanded="false" />
-            <element signature="e#12334#12444#0" expanded="false" />
-            <element signature="e#12446#12558#0" expanded="false" />
-            <element signature="e#12560#12680#0" expanded="false" />
-            <element signature="e#12682#12800#0" expanded="false" />
-            <element signature="e#12802#12926#0" expanded="false" />
-            <element signature="e#12928#13232#0" expanded="false" />
-            <element signature="e#13234#13308#0" expanded="false" />
-            <element signature="e#13310#13382#0" expanded="false" />
-            <element signature="e#13384#13446#0" expanded="false" />
-            <element signature="e#13448#13504#0" expanded="false" />
-            <element signature="e#13506#13560#0" expanded="false" />
-            <element signature="e#13562#13624#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Threads_IVQNet2/Data.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>

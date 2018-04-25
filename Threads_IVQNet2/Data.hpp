@@ -47,6 +47,7 @@ private:
     //Indices para recorrerer el vector de indices
     vector<int>::iterator itTrain;
     vector<int>::iterator itTest;
+    vector<int>::iterator itTestBase;
     int actualBatch = 0;
 
     vector<vector<oneData>> data;                               //1-Batch. 2-Data
@@ -63,7 +64,7 @@ public:
     void normalize();                                           //Normalizar la data
     void getTrain(vector<double> &input, int &output);   //Obtener vector de input y output de train
     void getTest(vector<double> &input, int &output);   //Obtener vector de input y output de test
-    
+    void getTestBase(vector<double> &input, int &output);
     
     void shuffleDataTrain();                                    //Mezclar el train
     void shuffleBatch(int batch);
@@ -102,12 +103,17 @@ public:
 
     int getTrainSize();
     int getTestSize();
+    int getTestBaseSize();
     int getTotalClasses();
     int getTotalDimentions();
 
     int getActualBatch();
 
     vector<int> getClassesPerBatch();
+
+    int getNumBatches();
+
+
 };
 
 

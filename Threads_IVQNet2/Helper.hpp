@@ -35,8 +35,8 @@ int vectorToState(vector<double>& input, int numBreaks);
 int discretize(double number, int breaks, double min, double max);
 void printToTxt(ofstream& file, double alpha, double beta, double temperature, vector<double> errores);
 void printToTxt2(ofstream& file, double beta, double alpha, double temperature, vector<vector<double>> errores);
-void printVector(vector<double> vector, string name);
-void printVector(vector<double> vector, string name, ofstream file);
+void printVector(vector<double> vectorr, string name);
+void printVector(vector<double> vectorr, string name, ofstream file);
 void printMatrix(vector<vector<double>> matrix, string name);
 void printMatrix(vector<vector<double>> matrix, string name, ofstream file);
 #endif /* Helper_hpp */

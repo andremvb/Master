@@ -26,25 +26,30 @@ public:
     ofstream leyend;
     
     //Train
-    vector<vector<double>> errorEpochTrain;              //Errores por epoca
-    vector<double> errorPromCombiTrain;                  //Errores de cada combinacion
-    
+    vector<vector<double>> errorEpochTrain;              //Errores por epoca    1.Fold, 2.Epoch
+    vector<double> errorPromCombiTrain;                  //Errores de cada combinacion  1.PromCombi
+    vector<double> errorNewTrain;                       //Error por batch 1.Batch-train
+
     //Test
-    vector<vector<double>> errorEpochTest;              //Errores por epoca
-    vector<double> errorPromCombiTest;                  //Promedio de tests en folds por combinacion
-    
+    vector<vector<double>> errorEpochTest;              //Errores por epoca. 1.Fold, 2.Epoch
+    vector<vector<double>> errorEpochTestBase;          //Errores por epoca. 1.Fold, 2.Epoch
+    vector<double> errorPromCombiTest;                  //Promedio de tests en folds por combinacion    1.PromCombi
+    vector<double> errorNewTest;                         //Error por batch en test   1.Batch-test
+    vector<double> errorBase;                           //Error base por batch  1.Batch
+
     ~ErrorManager(){if(leyend.is_open()){leyend.close(); leyend.clear();}}
     
     /*
      * Inicializar ErrorManager
      */
     void init(Params* param, string folder);
+    void initBatch(Params* param, string folder);
     
     /*
      * Setea el errores
      */
-    void setErrorTrain(ContingenceTable& contTableTrain,int epoch, int fold);
-    void setErrorTest(ContingenceTable& contTableTest,int epoch, int fold);
+    void setErrorTrain(ContingenceTable &contTableTrain, int epoch, int fold, int batch);
+    void setErrorTest(ContingenceTable &contTableTest, int epoch, int fold, int batch);
     
     /*
      * Exporta: temperatura - Error Promedio Train - Descivacion estadarTrain - Error Promedio Test - DesviacionestandarTest de todos los folds
@@ -53,6 +58,7 @@ public:
     void exportCombi(int combi);
     void exportFold(int fold);
     void exportLeyend();
+    void exportBatch(int batch);
     
     double getTrainErrorFold(int fold);
     double getTestErrorFold(int fold);
@@ -77,9 +83,10 @@ public:
      * Obtiene el promedio de los ultimos numEpochs errores (Test)
      */
     double getTestLastsErrors(int numEpochs, int fold, int numProm);
-    
-    
-    
+
+    double getTestBaseErrorFold(int fold);
+
+    void setErrorTestBase(ContingenceTable &contTableTestBase, int epoch, int fold, int batch);
 };
 
 #endif /* ErrorManager_hpp */

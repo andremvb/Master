@@ -87,6 +87,11 @@ void trainCombis();
 void trainMultiModal();
 
 int main(int argc, const char * argv[]) {
+    trainCombis();
+}
+
+void trainCombis(){
+    //Inicializando
     Params param;                                   //Parametros
     NeuralNetwork neuralNetwork;                    //Modelo
     Data data;                                      //Data
@@ -94,13 +99,10 @@ int main(int argc, const char * argv[]) {
     ContingenceTable contTableTrain;                //Tabla de contingencia para el train
     ErrorManager errorManager;
     
-    //SETEAR PARAMETROS
-    //Con que problema trabajaremos
-    param.problems.push_back(Problem::jain);
-//    param.problems.push_back(Problem::flame);
-//    param.problems.push_back(Problem::spiral);
-    //param.problems.push_back(Problem::pathbased);
-    //param.problems.push_back(Problem::aggregation);
+    //Setear parametros
+    param.addProblem(Problem::spiral);
+//        p.problems.push_back(Problem::spiral);          //Con que problema trabajaremos
+//    param.problems.push_back(Problem::aggregation);          //Con que problema trabajaremos
     
     //    p.ebsilon = 0.0005;
     param.baseTemp = 0.05;
@@ -118,128 +120,6 @@ int main(int argc, const char * argv[]) {
     param.politic = Politic::Softmax;
     
     param.numActions = 10;
-    param.epochs = 300;
-    
-    param.numFolds = 10;
-    
-    param.alphas={0.05};        //    p.alphas = {0.05, 0.1, 0.2};
-    param.betas = {0.75};       //    p.betas = {0.5, 0.75, 0.9, 0.95};
-    param.factorTemps = {0.99}; //    p.factorTemps = {0.5, 0.85, 0.9, 0.99, 0.995};
-    param.structure = {2};
-    param.ebsilons = {};
-    param.initChangeParam();
-    
-    
-    data.loadProblems(param);
-    data.initKFold(param.numFolds);
-    data.printDescription();
-    
-    param.structure.push_back(data.getTotalClasses());
-    
-    //Initialize network
-    neuralNetwork.setNetwork(data, param);
-    neuralNetwork.printDescription();
-    
-    contTableTrain.setTable(data.getClassesPerBatch());
-    contTableTest.setTable(data.getClassesPerBatch());
-    
-    vector<double> input (data.getTotalDimentions(),0);           //Vector de entrada a la red
-    int output = 0;              //Etiquetas del vector de entrada.
-    
-    //EXPORT//
-    string folder = "Estadisticas/AccionesDiscretas/";
-    errorManager.init(&param, folder);
-    
-    cout<<"Numero de combinaciones: "<<param.getnumCombi()<<endl;
-    
-    ////////////// ENTRENAMIENTO DE LA RED ////////////////////////
-    
-    //Cambiando de parametros
-    for (int combi = 0; combi < param.getnumCombi(); combi++) {
-        cout<<"///// Generando combinacion: "<<combi<<"/////"<<endl;
-        //Folds
-        for (int fold = 0; fold < param.numFolds; fold++) {
-            cout<<"F: "<<fold<<"  "<<endl;
-            //Epocas
-            for (int epoch = 0; epoch < param.epochs; epoch++) {
-                param.decTemp(epoch);
-                
-                //Train
-                for (int j = 0; j < data.getTrainSize(); j++) {
-                    data.getTrain(input, output);
-                    neuralNetwork.train(input, output);
-                    contTableTrain.set(data.getActualBatch(), output, neuralNetwork.outputNet);
-                }
-                errorManager.setErrorTrain(contTableTrain, epoch, fold);
-                data.shuffleDataTrain();
-                data.resetTrainPointer();
-                
-                //Test
-                for (int j = 0; j < data.getTestSize(); j++) {
-                    data.getTest(input, output);
-                    neuralNetwork.test(input, output);
-                    contTableTest.set(data.getActualBatch(), output, neuralNetwork.outputNet);
-                }
-                data.resetTestPointer();
-                errorManager.setErrorTest(contTableTest, epoch, fold);
-                errorManager.exportFold(fold);
-            }
-            neuralNetwork.printStatesNotVisited(data);
-            cout<<"Train: "<<errorManager.getTrainErrorFold(fold)<<"   Test: "<<errorManager.getTestErrorFold(fold)<<endl;
-            data.nextFold();
-            if (fold == 0) {
-                neuralNetwork.exportToPlot(folder);
-            }
-            
-            neuralNetwork.forget();
-            cout<<"Promedio del train de los ultimas epocas: "<<errorManager.getTrainLastsErrors(param.epochs, fold, 100)<<endl;
-            cout<<"Promedio del test de los ultimas epocas: "<<errorManager.getTestLastsErrors(param.epochs, fold, 100)<<endl<<endl;
-        }
-        data.resetFold();
-        cout<<endl;
-        errorManager.exportCombi(combi);
-        errorManager.exportLeyend();
-        cout<<"Error promedio en el train: "<<errorManager.getTrainErrorCombi(combi)<<endl;
-        cout<<"Error promedio en el test: "<<errorManager.getTestErrorCombi(combi)<<endl<<endl;
-        param.nextParam();
-    }
-    
-    //Resetear para imprimir los parametros
-    param.resetParam();
-    
-    //Export resumen
-    exportParams(param, folder);
-}
-
-void trainCombis(){
-    //Inicializando
-    Params param;                                   //Parametros
-    NeuralNetwork neuralNetwork;                    //Modelo
-    Data data;                                      //Data
-    ContingenceTable contTableTest;                 //Tabla de contingencia para el test
-    ContingenceTable contTableTrain;                //Tabla de contingencia para el train
-    ErrorManager errorManager;
-    
-    //Setear parametros
-    //    p.problems.push_back(Problem::spiral);          //Con que problema trabajaremos
-    param.problems.push_back(Problem::aggregation);          //Con que problema trabajaremos
-    
-    //    p.ebsilon = 0.0005;
-    param.baseTemp = 0.05;
-    param.tempDec = true;
-    param.temperature = 0.003;
-    
-    //Propagacion de Q-value
-    param.gamma = 0.0005;
-    param.timeConstant = 300;
-    param.sigma = 0.03;
-    param.gamma2 = 0.005;
-    param.alcanceActions = 0;
-    param.alcanceState = 3;
-    
-    param.politic = Politic::Softmax;
-    
-    param.numActions = 15;
     param.epochs = 1000;
     
     param.numFolds = 10;
@@ -260,9 +140,9 @@ void trainCombis(){
     //Initialize network
     neuralNetwork.setNetwork(data, param);
     neuralNetwork.printDescription();
-    
-    contTableTrain.setTable(data.getClassesPerBatch());
-    contTableTest.setTable(data.getClassesPerBatch());
+
+    contTableTrain.init(data.getClassesPerBatch());
+    contTableTest.init(data.getClassesPerBatch());
     
     vector<double> input (data.getTotalDimentions(),0);           //Vector de entrada a la red
     int output = 0;              //Etiquetas del vector de entrada.
@@ -291,7 +171,7 @@ void trainCombis(){
                     neuralNetwork.train(input, output);
                     contTableTrain.set(data.getActualBatch(), output, neuralNetwork.outputNet);
                 }
-                errorManager.setErrorTrain(contTableTrain, epoch, fold);
+                errorManager.setErrorTrain(contTableTrain, epoch, fold, 0);
                 data.shuffleDataTrain();
                 
                 //Test
@@ -300,7 +180,7 @@ void trainCombis(){
                     neuralNetwork.test(input, output);
                     contTableTest.set(data.getActualBatch(), output, neuralNetwork.outputNet);
                 }
-                errorManager.setErrorTest(contTableTest, epoch, fold);
+                errorManager.setErrorTest(contTableTest, epoch, fold, 0);
                 errorManager.exportFold(fold);
             }
             neuralNetwork.printStatesNotVisited(data);
@@ -309,7 +189,6 @@ void trainCombis(){
             if (fold == 0) {
                 neuralNetwork.exportToPlot(folder);
             }
-            
             neuralNetwork.forget();
             cout<<"Promedio del train de los ultimas epocas: "<<errorManager.getTrainLastsErrors(param.epochs, fold, 100)<<endl;
             cout<<"Promedio del test de los ultimas epocas: "<<errorManager.getTestLastsErrors(param.epochs, fold, 100)<<endl<<endl;
@@ -413,4 +292,113 @@ void exportParams(Params& p, string folder){
     notes<<endl;
     notes << "Temperatura base: " << p.baseTemp <<endl;
     
+}
+
+void trainMultiModal() {
+    Params param;                                   //Parametros
+    NeuralNetwork neuralNetwork;                    //Modelo
+    Data data;                                      //Data
+    ContingenceTable contTableTest;                 //Tabla de contingencia para el test
+    ContingenceTable contTableTrain;                //Tabla de contingencia para el train
+    ContingenceTable contTableTestBase;                //Tabla de contingencia para el train
+    ErrorManager errorManager;
+
+    //SETEAR PARAMETROS
+    //Con que problema trabajaremos
+    param.addProblem(Problem::jain);
+    param.addProblem(Problem::flame);
+//    param.addProblem(Problem::pathbased);
+//    param.addProblem(Problem::spiral);
+
+    //    p.ebsilon = 0.0005;
+    param.baseTemp = 0.05;
+    param.tempDec = true;
+    param.temperature = 0.003;
+
+    //Propagacion de Q-value
+    param.gamma = 0.0005;
+    param.timeConstant = 300;
+    param.sigma = 0.03;
+    param.gamma2 = 0.005;
+    param.alcanceActions = 0;
+    param.alcanceState = 2;
+
+    param.politic = Politic::Softmax;
+
+    param.numActions = 10;
+    param.epochs = 300;
+
+    param.numFolds = 3;
+
+    param.alphas={0.05};        //    p.alphas = {0.05, 0.1, 0.2};
+    param.betas = {0.75};       //    p.betas = {0.5, 0.75, 0.9, 0.95};
+    param.factorTemps = {0.99}; //    p.factorTemps = {0.5, 0.85, 0.9, 0.99, 0.995};
+    param.structure = {2};
+    param.ebsilons = {};
+    param.initChangeParam();
+
+
+    data.loadProblems(param);
+    data.initKFold(param.numFolds);
+    data.printDescription();
+
+    param.structure.push_back(data.getTotalClasses());
+
+    //Initialize network
+    neuralNetwork.setNetwork(data, param);
+    neuralNetwork.printDescription();
+
+    contTableTrain.init(data.getClassesPerBatch());
+    contTableTest.init(data.getClassesPerBatch());
+    contTableTestBase.init(data.getClassesPerBatch());
+
+    vector<double> input (data.getTotalDimentions(),0);           //Vector de entrada a la red
+    int output = 0;              //Etiquetas del vector de entrada.
+
+    //EXPORT//
+    string folder = "Estadisticas/AccionesDiscretas/";
+    errorManager.initBatch(&param, folder);
+    cout<<"Numero de batchs: "<<param.getnumCombi()<<endl;
+
+    ////////////// ENTRENAMIENTO DE LA RED ////////////////////////
+    //Cambiando batches
+    for(int batch = 0; batch < data.getNumBatches(); batch++){
+        cout<<"///// Entrenando batch: "<<batch<<"/////"<<endl;
+        //Epocas
+        for (int epoch = 0; epoch < param.epochs; epoch++) {
+            param.decTemp(epoch);
+            //Train
+            for (int j = 0; j < data.getTrainSize(); j++) {
+                data.getTrain(input, output);
+                neuralNetwork.train(input, output);
+                contTableTrain.set(data.getActualBatch(), output, neuralNetwork.outputNet);
+            }
+            errorManager.setErrorTrain(contTableTrain, epoch, 0, batch);
+            data.shuffleDataTrain();
+
+            //Test
+            for (int j = 0; j < data.getTestSize(); j++) {
+                data.getTest(input, output);
+                neuralNetwork.test(input, output);
+                contTableTest.set(data.getActualBatch(), output, neuralNetwork.outputNet);
+            }
+            errorManager.setErrorTest(contTableTest, epoch, 0, batch);
+
+            //Test Base
+            for (int j = 0; j < data.getTestBaseSize(); ++j) {
+                data.getTestBase(input,output);
+                neuralNetwork.test(input,output);
+                contTableTestBase.set(batch,output,neuralNetwork.outputNet);
+            }
+            errorManager.setErrorTestBase(contTableTestBase, epoch, 0, batch);
+            errorManager.exportFold(0);
+
+        }
+//        neuralNetwork.printStatesNotVisited(data);
+        errorManager.exportBatch(batch);
+        cout<<"Train: "<<errorManager.getTrainErrorFold(0)<<"   Test: "<<errorManager.getTestErrorFold(0)<<"\t TestBase: "<<errorManager.getTestBaseErrorFold(0)<<endl;
+        cout<<"Promedio del train de los ultimas epocas: "<<errorManager.getTrainLastsErrors(param.epochs, 0, 100)<<endl;
+        cout<<"Promedio del test de los ultimas epocas: "<<errorManager.getTestLastsErrors(param.epochs, 0, 100)<<endl<<endl;
+        data.nextBatch();
+    }
 }

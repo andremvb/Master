@@ -20,8 +20,8 @@ private:
     vector<int> indexParam;
     vector<double> topes;
     int topeIterador;
+
 public:
-    
     vector<Problem> problems;
     double alpha = 0;           //Coeficiente de aprendizaje
     double beta = 0;            //Coeficiente de comunicacion entre agentes
@@ -52,15 +52,16 @@ public:
     vector<double> factorTemps;
     vector<double> ebsilons;
 
-    
     void nextParam();
     void initChangeParam();
     void resetParam();
     void decTemp(int iteration);
     int getnumCombi(); //Devuelve el numero de combinaciones de parametros
+    int getnumBatchs(); //Devuelve el numero de batches
+    void addProblem(Problem problem);
+
     //Empieza el test en una combinacion de parametro comb
     void startOnParam(int comb);
-    
 };
 
 

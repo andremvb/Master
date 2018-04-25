@@ -25,13 +25,13 @@ public:
     
     
     //Necesario para crear la tabla de contingencia
-    void setTable(vector<int> classes);
+    void init(vector<int> classes);
     
     //Inserta un valor a la tabla
     void set(int batch, int real, int out);
     
     //Devuelve el error total
-    double getTotalError();
+    double getTotalError(int batch);
     
     //Imprime en consola el error total
     void printTotalError();

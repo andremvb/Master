@@ -77,4 +77,12 @@ void Params::startOnParam(int comb){
     }
 }
 
+int Params::getnumBatchs() {
+    return problems.size();
+}
+
+void Params::addProblem(Problem problem) {
+    problems.push_back(problem);
+}
+
 

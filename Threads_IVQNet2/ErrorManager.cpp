@@ -22,14 +22,35 @@ void ErrorManager::init(Params* param, string folder){
     leyend.open(folder + "Leyend.txt");
 }
 
-void ErrorManager::setErrorTrain(ContingenceTable& contTableTrain,int epoch, int fold){
-    errorEpochTrain[fold][epoch] = contTableTrain.getTotalError();
+void ErrorManager::initBatch(Params *param, string folder) {
+    this->param = param;
+    this->folder = folder;
+
+    //1-Fold. 2-Epoch
+    this->errorEpochTrain = vector<vector<double>>(1,vector<double>(param->epochs, 0));       //Errores por epoca
+    this->errorEpochTest = vector<vector<double>>(1, vector<double> (param->epochs, 0));    //Errores por epoca
+    this->errorEpochTestBase = vector<vector<double>>(1, vector<double> (param->epochs, 0));    //Errores por epoca
+
+    this->errorBase = vector<double> (param->getnumBatchs());
+    this->errorNewTest = vector<double> (param->getnumBatchs());
+    this->errorNewTrain = vector<double> (param->getnumBatchs());
+
+    leyend.open(folder + "Leyend.txt");
+}
+
+void ErrorManager::setErrorTrain(ContingenceTable &contTableTrain, int epoch, int fold, int batch) {
+    errorEpochTrain[fold][epoch] = contTableTrain.getTotalError(batch);
     contTableTrain.forget();
 }
 
-void ErrorManager::setErrorTest(ContingenceTable& contTableTest, int epoch, int fold){
-    errorEpochTest[fold][epoch] = contTableTest.getTotalError();
+void ErrorManager::setErrorTest(ContingenceTable &contTableTest, int epoch, int fold, int batch) {
+    errorEpochTest[fold][epoch] = contTableTest.getTotalError(batch);
     contTableTest.forget();
+}
+
+void ErrorManager::setErrorTestBase(ContingenceTable &contTableTestBase, int epoch, int fold, int batch) {
+    errorEpochTestBase[fold][epoch] = contTableTestBase.getTotalError(batch);
+    contTableTestBase.forget();
 }
 
 void ErrorManager::exportCombi(int combi){
@@ -86,6 +107,7 @@ void ErrorManager::exportCombi(int combi){
     file.clear();
 }
 
+//Crea el archivo Fold_.txt
 void ErrorManager::exportFold(int fold){
     ofstream file;
     file.open(folder + "Fold" + to_string(fold) + ".csv");
@@ -118,7 +140,11 @@ double ErrorManager::getTrainErrorFold(int fold){
     return this->errorEpochTrain[fold].back();
 }
 
-double ErrorManager::getTestErrorFold(int fold){
+double ErrorManager::getTestBaseErrorFold(int fold) {
+    return this->errorEpochTestBase[fold].back();
+}
+
+    double ErrorManager::getTestErrorFold(int fold){
     return this->errorEpochTest[fold].back();
 }
 
@@ -128,7 +154,6 @@ double ErrorManager::getTrainLastsErrors(int numEpochs, int fold, int numProm){
         prom += this->errorEpochTrain[fold][i];
     }
     return prom/numProm;
-    
 }
 
 double ErrorManager::getTestLastsErrors(int numEpochs, int fold, int numProm){
@@ -158,6 +183,38 @@ void ErrorManager::exportLeyend(){
     leyend<<"Gamma acciones:"<<param->gamma2<<"\t";
     leyend<<endl;
 }
+
+//Esta funcion no soporta k-folds. Solo se usara el fold 0
+void ErrorManager::exportBatch(int batch) {
+    ofstream file;
+    file.open(folder + "Batch" + to_string(batch) + ".csv");
+    if (file.bad()) {
+        cout<<"Error creando el archivo export batch"<<endl;
+    }
+
+    file<<"Epoch,,Train,Test,Base"<<endl;
+    for (int i = 0;i < param->epochs; i++) {
+        param->decTemp(i);
+        file<<i<<",";
+        if (param->politic == Politic::Softmax) {
+            file<<param->temperature<<",";
+        }else if (param->politic == Politic::e_greedy){
+            file<<param->ebsilon<<",";
+        }
+        file<<errorEpochTrain[0][i]<<",";
+        file<<errorEpochTest[0][i]<<",";
+        file<<errorEpochTestBase[0][i];
+        file<<endl;
+    }
+
+    errorNewTrain[batch] =  errorEpochTrain[0].back();
+    errorNewTest[batch] = errorEpochTest[0].back();
+    errorBase[batch] = errorEpochTestBase[0].back();
+    file.close();
+    file.clear();
+}
+
+
 
 void exportSummary(vector<double> minErrors, vector<double> lastErrors, vector<double> testErrors, int combinaciones,string folder){
     ofstream resumen;

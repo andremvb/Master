@@ -41,7 +41,7 @@ void ContingenceTable::printTable(){
     }
 }
 
-void ContingenceTable::setTable(vector<int> classes){
+void ContingenceTable::init(vector<int> classes){
     cT.clear();
     cT.resize(classes.size());
     for (int i = 0; i < classes.size(); i++) {
@@ -57,32 +57,23 @@ void ContingenceTable::set(int batch,int real, int out){
 }
 
 //Devuelve el error total
-double ContingenceTable::getTotalError(){
+double ContingenceTable::getTotalError(int batch) {
     totalError = 0;
-    
-    vector<int> aciertos (cT.size(), 0);
-    vector<int> desaciertos (cT.size(), 0);
-    vector<double> errores (cT.size(), 0);
-    for (int i = 0; i < cT.size(); i++) {
-        for (int j = 0; j < cT[i].size(); j++) {
-            for (int k = 0; k < cT[i][j].size(); k++) {
+    double aciertos = 0;
+    double desaciertos = 0;
+    double error = 0;
+        for (int j = 0; j < cT[batch].size(); j++) {
+            for (int k = 0; k < cT[batch][j].size(); k++) {
                 if (j == k) {
-                    aciertos[i] += cT[i][j][k];
+                    aciertos += cT[batch][j][k];
                 }else{
-                    desaciertos[i] += cT[i][j][k];
+                    desaciertos += cT[batch][j][k];
                 }
             }
         }
-    }
-    for (int i = 0; i < aciertos.size(); i++) {
-        errores[i] = ((double)desaciertos[i] * 100) / ( (double)aciertos[i] + (double)desaciertos[i]);
-    }
-    for (int i = 0; i < errores.size(); i++) {
-        totalError += errores[i];
-    }
-    totalError = totalError/errores.size();
-    
-    return totalError;
+
+    error = (desaciertos * 100) / ( aciertos + desaciertos);
+    return error;
 }
 
 void ContingenceTable::printTotalError(){

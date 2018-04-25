@@ -176,6 +176,16 @@ void Data::getTest(vector<double> &input, int &output){
     }
 }
 
+void Data::getTestBase(vector<double> &input, int &output){
+    input = data[0][*itTestBase].input;
+    output = data[0][*itTestBase].output;
+    if (itTestBase != dataIndexes[0].test.end()-1) {
+        itTestBase++;
+    } else{
+        itTestBase = dataIndexes[0].test.begin();
+    }
+}
+
 void Data::getTrain(vector<double> &input, int &output) {
     input = data[actualBatch][*itTrain].input;
     output = data[actualBatch][*itTrain].output;
@@ -227,6 +237,7 @@ void Data::initKFold(int k){
 //    shuffleBatch(0);
     itTrain = dataIndexes[actualBatch].train.begin();
     itTest = dataIndexes[actualBatch].test.begin();
+    itTestBase = dataIndexes[0].test.begin();
 }
 
 //No vuelve a hacer shuffle de la data
@@ -461,4 +472,12 @@ void Data::resetTestPointer() {
 
 void Data::resetTrainPointer() {
     itTrain = dataIndexes[actualBatch].train.begin();
+}
+
+int Data::getNumBatches() {
+    return data.size();
+}
+
+int Data::getTestBaseSize() {
+    return data[0].size();
 }
