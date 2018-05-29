@@ -97,40 +97,40 @@ void Data::insertOneData(vector<double> input,int output){
 
 //Carga los problemas
 void Data::loadProblems(Params &p){
-    for(auto problem : p.problems){
-        switch (problem) {
-            case Problem::spiral:
+    for(auto p : p.problems){
+        switch (p.problem) {
+            case ProblemName::spiral:
                 loadSpiral();
                 break;
-            case Problem::iris:
+            case ProblemName::iris:
                 loadIris();
                 break;
                 
-            case Problem::wine:
+            case ProblemName::wine:
                 loadWine();
                 break;
             
-            case Problem::glass:
+            case ProblemName::glass:
                 loadGlass();
                 break;
                 
-            case Problem::jain:
+            case ProblemName::jain:
                 loadJain();
                 break;
                 
-            case Problem::flame:
+            case ProblemName::flame:
                 loadFlame();
                 break;
                 
-            case Problem::pathbased:
+            case ProblemName::pathbased:
                 loadPathbased();
                 break;
             
-            case Problem::compound:
+            case ProblemName::compound:
                 loadCompound();
                 break;
                 
-            case Problem::aggregation:
+            case ProblemName::aggregation:
                 loadAggregation();
                 break;
             

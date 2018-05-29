@@ -165,7 +165,8 @@ double ErrorManager::getTestLastsErrors(int numEpochs, int fold, int numProm){
 }
 
 void ErrorManager::exportLeyend(){
-    leyend<<"Problema=iris"<<"\t";
+//    leyend<<"Problema=iris"<<"\t";
+    leyend<<"Problema="<<param->problems[0].name<<"\t";
     leyend<<"Numero de acciones"<<"="<<param->numActions<<"\t";
     leyend<<"Estructura"<<"="<<param->structure[0]<<"\t";
     leyend<<PAlpha<<"="<<param->alpha<<"\t";

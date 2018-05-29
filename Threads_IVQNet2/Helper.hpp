@@ -25,8 +25,44 @@
 using namespace std;
 
 enum class Politic {Softmax, e_greedy};
-enum class Problem {spiral, iris, wine, glass, jain, flame, pathbased, compound, aggregation};
+enum class ProblemName {spiral, iris, wine, glass, jain, flame, pathbased, compound, aggregation};
 
+struct Problem{
+    ProblemName problem;
+    string name;
+    Problem(ProblemName problem){
+        this->problem = problem;
+        switch (problem){
+            case ProblemName::spiral:
+                name = "spiral";
+                break;
+            case ProblemName ::iris:
+                name = "iris";
+                break;
+            case ProblemName ::wine:
+                name = "wine";
+                break;
+            case ProblemName ::glass:
+                name = "glass";
+                break;
+            case ProblemName :: jain:
+                name = "jain";
+                break;
+            case ProblemName ::flame:
+                name = "flame";
+                break;
+            case ProblemName ::pathbased:
+                name = "pathbased";
+                break;
+            case ProblemName ::compound:
+                name = "compound";
+                break;
+            case ProblemName ::aggregation:
+                name = "aggregation";
+                break;
+        }
+    }
+};
 
 int randInt(int,int);
 double rand01();

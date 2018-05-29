@@ -27,56 +27,8 @@
 #include "State.hpp"
 #include "ErrorManager.hpp"
 
+
 using namespace std;
-
-std::ostream& operator<<(std::ostream& os, Politic const& politic){
-    switch (politic) {
-        case Politic::Softmax:
-            os<<"Softmax";
-            break;
-        case Politic::e_greedy:
-            os<<"E_greedy";
-            break;
-        default:
-            os<<"CaseAunNoEn<<OPerator";
-            break;
-    }
-    return os;
-}
-
-std::ostream& operator<<(std::ostream& os, Problem const& problem){
-    switch (problem) {
-        case Problem::spiral:
-            os<<"spiral";
-            break;
-        case Problem::iris:
-            os<<"iris";
-            break;
-        case Problem::wine:
-            os<<"wine";
-            break;
-        case Problem::jain:
-            os<<"jain";
-            break;
-        case Problem::flame:
-            os<<"flame";
-            break;
-        case Problem::pathbased:
-            os<<"pathbased";
-            break;
-        case Problem::compound:
-            os<<"compound";
-            break;
-        case Problem::aggregation:
-            os<<"aggregation";
-            break;
-        default:
-            os<<"CaseAunNoEn<<OPerator";
-            break;
-    }
-    return os;
-}
-
 
 void exportParams(Params& p, string folder);
 
@@ -100,7 +52,7 @@ void trainCombis(){
     ErrorManager errorManager;
     
     //Setear parametros
-    param.addProblem(Problem::spiral);
+    param.addProblem(Problem(ProblemName::spiral));
 //        p.problems.push_back(Problem::spiral);          //Con que problema trabajaremos
 //    param.problems.push_back(Problem::aggregation);          //Con que problema trabajaremos
     
@@ -123,11 +75,15 @@ void trainCombis(){
     param.epochs = 1000;
     
     param.numFolds = 10;
-    
-    param.alphas={0.05};        //    p.alphas = {0.05, 0.1, 0.2};
-    param.betas = {0.75};       //    p.betas = {0.5, 0.75, 0.9, 0.95};
-    param.factorTemps = {0.99}; //    p.factorTemps = {0.5, 0.85, 0.9, 0.99, 0.995};
-    param.structure = {2};
+
+//    param.alphas = {0.05, 0.1, 0.2};
+    param.alphas={0.05};
+//    param.betas = {0.5, 0.75, 0.9, 0.95};
+    param.betas = {0.75};
+//    param.factorTemps = {0.5, 0.85, 0.9, 0.99, 0.995};
+    param.factorTemps = {0.99};
+
+    param.structure = {4};
     param.ebsilons = {};
     param.initChangeParam();
     
@@ -181,7 +137,7 @@ void trainCombis(){
                     contTableTest.set(data.getActualBatch(), output, neuralNetwork.outputNet);
                 }
                 errorManager.setErrorTest(contTableTest, epoch, fold, 0);
-                errorManager.exportFold(fold);
+//                errorManager.exportFold(fold);
             }
             neuralNetwork.printStatesNotVisited(data);
             cout<<"Train: "<<errorManager.getTrainErrorFold(fold)<<"   Test: "<<errorManager.getTestErrorFold(fold)<<endl;
@@ -220,45 +176,9 @@ void exportParams(Params& p, string folder){
     notes.open(folder + "Parametros.txt");
     notes << "Pruebas con las siguientes bases de datos: ";
     for (auto itr = p.problems.begin(); itr != p.problems.end(); itr++) {
-        switch (*itr) {
-            case Problem::spiral:
-                notes << "loadSpiral"<<endl;
-                break;
-                
-            case Problem::iris:
-                notes << "loadIris" <<endl;
-                break;
-                
-            case Problem::wine:
-                notes << "loadWine" <<endl;
-                break;
-            
-            case Problem::flame:
-                notes << "Flame" <<endl;
-                break;
-                
-            case Problem::jain:
-                notes << "Jain" <<endl;
-                break;
-                
-            case Problem::pathbased:
-                notes << "Pathbased" <<endl;
-                break;
-                
-            case Problem::compound:
-                notes << "Compound" <<endl;
-                break;
-                
-            case Problem::aggregation:
-                notes << "Aggregation" <<endl;
-                break;
-            
-            default:
-                notes << "Problema aun no definido"<<endl;
-                break;
-        }
+        notes<< itr->name << "\t";
     }
-    
+    notes<<endl;
     notes << "Epocas: " << p.epochs << endl;
     notes << "Numero de acciones: " << p.numActions <<endl;
     notes << "Numero de folds: " << p.numFolds << endl;
@@ -305,10 +225,8 @@ void trainMultiModal() {
 
     //SETEAR PARAMETROS
     //Con que problema trabajaremos
-    param.addProblem(Problem::jain);
-    param.addProblem(Problem::flame);
-//    param.addProblem(Problem::pathbased);
-//    param.addProblem(Problem::spiral);
+    param.addProblem(Problem(ProblemName::jain));
+    param.addProblem(Problem(ProblemName::flame));
 
     //    p.ebsilon = 0.0005;
     param.baseTemp = 0.05;
